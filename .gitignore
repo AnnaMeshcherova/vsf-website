@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# gstack tooling metadata
+.gstack/
+
+# Vercel
+.vercel/
+
+# Node (defensive — not used but just in case)
+node_modules/
+
+# Print-only brand files (not needed for web, keep locally only)
+assets/*.ai
+assets/*.eps
+assets/*_CMYK.*
+
+# Hero image candidates (only hero-bg.jpg is used)
+assets/Hero images/
+
+# Uploads folder (dev scratchpad)
+uploads/
+
+# Dev/preview HTML
+hero-mockups.html
