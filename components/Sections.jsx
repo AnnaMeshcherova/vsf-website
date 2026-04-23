@@ -10,17 +10,19 @@ function Thesis() {
             <h2 className="h-lg">{t("thesis.headline")}</h2>
           </Reveal>
         </div>
-        <div className="thesis-grid">
+        <div className="thesis-body">
           <Reveal>
             <p className="prose">
               {t("thesis.p1.1")}<strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Databricks</strong>, <strong>Cohere</strong>{t("thesis.p1.2")}
             </p>
+          </Reveal>
+          <Reveal delay={80}>
             <p className="prose">
               {t("thesis.p2.1")}<strong>{t("thesis.p2.vs")}</strong>{t("thesis.p2.2")}
             </p>
           </Reveal>
-          <Reveal delay={140}>
-            <p className="prose">
+          <Reveal delay={160}>
+            <p className="thesis-conclusion">
               {t("thesis.p3.1")}<strong>{t("thesis.p3.a")}</strong>{t("thesis.p3.2")}<strong>{t("thesis.p3.b")}</strong>{t("thesis.p3.3")}
             </p>
           </Reveal>
