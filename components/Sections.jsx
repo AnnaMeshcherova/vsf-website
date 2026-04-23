@@ -5,7 +5,6 @@ function Thesis() {
     <section id="thesis">
       <div className="wrap">
         <div className="section-head">
-          <div className="label">{t("thesis.label")}</div>
           <Reveal>
             <h2 className="h-lg">{t("thesis.headline")}</h2>
           </Reveal>
@@ -43,7 +42,6 @@ function Opportunity() {
     <section id="opportunity">
       <div className="wrap">
         <div className="section-head">
-          <div className="label">{t("opp.label")}</div>
           <Reveal>
             <h2 className="h-lg">{t("opp.headline")}</h2>
           </Reveal>
@@ -107,7 +105,6 @@ function Advantage() {
     <section id="advantage">
       <div className="wrap">
         <div className="section-head">
-          <div className="label">{t("adv.label")}</div>
           <Reveal>
             <h2 className="h-lg">{t("adv.headline")}</h2>
           </Reveal>
@@ -168,7 +165,6 @@ function Team() {
     <section id="team">
       <div className="wrap">
         <div className="section-head">
-          <div className="label">{t("team.label")}</div>
           <Reveal>
             <h2 className="h-lg">{t("team.headline")}</h2>
           </Reveal>
