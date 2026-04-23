@@ -86,7 +86,7 @@ const STRINGS = {
     "contact.eyebrow": "Become a partner",
     "contact.headline": "Join us in building the future of AI",
 
-    "foot.tagline": "Backing AI scientists at the moment of discovery, turning breakthroughs into category-defining companies.",
+    "foot.tagline": "We enable the translation of AI research breakthroughs into companies that drive long-term economic value.",
     "foot.nav": "Navigate",
     "foot.partners": "Partners",
     "foot.copyright": "© 2026 The Venture Scientist Fund",
@@ -175,7 +175,7 @@ const STRINGS = {
     "contact.eyebrow": "Devenir partenaire",
     "contact.headline": "Joignez-vous à nous pour bâtir l'avenir de l'IA",
 
-    "foot.tagline": "Nous soutenons les scientifiques de l'IA au moment de la découverte, transformant leurs percées en entreprises qui redéfinissent des catégories entières.",
+    "foot.tagline": "Nous permettons la transformation des percées de la recherche en IA en entreprises qui génèrent une valeur économique durable.",
     "foot.nav": "Naviguer",
     "foot.partners": "Partenaires",
     "foot.copyright": "© 2026 The Venture Scientist Fund",
