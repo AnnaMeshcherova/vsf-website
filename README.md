@@ -2,7 +2,7 @@
 
 One-page bilingual (EN/FR) marketing site for **The Venture Scientist Fund** (VSF), a Canadian AI venture fund in partnership with Mila and Inovia Capital.
 
-**Live:** _(set after Vercel deploy)_
+**Live:** https://vsf-website-zeta.vercel.app
 
 ## Stack
 
