@@ -81,8 +81,8 @@ a { color: inherit; text-decoration: none; }
 }
 .display em, .headline em, .h-lg em { font-style: italic; font-weight: 400; }
 
-.headline { font-size: clamp(44px, 8.5vw, 132px); line-height: 0.98; }
-.h-lg { font-size: clamp(36px, 4.8vw, 72px); line-height: 1.02; letter-spacing: -0.025em; }
+.headline { font-size: clamp(44px, 8.5vw, 132px); line-height: 0.98; text-wrap: balance; }
+.h-lg { font-size: clamp(36px, 4.8vw, 72px); line-height: 1.02; letter-spacing: -0.025em; text-wrap: balance; }
 .h-md { font-size: clamp(36px, 3.6vw, 56px); line-height: 1.02; letter-spacing: -0.02em; font-variation-settings: "opsz" 48; }
 
 .prose {
@@ -405,8 +405,9 @@ section.hero { padding: 0; }
 
 .hero .headline {
   color: var(--ivory);
-  max-width: 17ch;
+  max-width: 18ch;
   letter-spacing: -0.028em;
+  text-wrap: balance;
 }
 .hero .sub {
   margin-top: 24px;
