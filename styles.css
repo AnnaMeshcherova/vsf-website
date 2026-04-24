@@ -19,7 +19,7 @@
   --ivory-mute: rgba(255, 255, 255, 0.78);
 
   /* Type */
-  --font-display: "Source Serif 4", "Source Serif Pro", "Times New Roman", Georgia, serif;
+  --font-display: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-body: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   /* Former "mono" slot — now also IBM Plex Sans for a uniform institutional voice.
      Used for uppercase spaced labels, eyebrows, stat headings. */
@@ -403,12 +403,6 @@ section.hero { padding: 0; }
   height: 1px;
   background: var(--ivory-mute);
 }
-
-/* Hero-scoped: Inter overrides the global serif display / IBM Plex body */
-.hero, .hero .headline, .hero .sub, .hero .partners, .hero .btn, .hero-tag {
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-.hero .headline { font-variation-settings: normal; }
 
 .hero .headline {
   color: var(--ivory);
@@ -944,19 +938,6 @@ section.hero { padding: 0; }
   line-height: 1.55;
 }
 
-.team-edge {
-  margin-top: 28px;
-  padding-left: var(--col-indent);
-  padding-top: 20px;
-  border-top: 1px solid var(--rule-strong);
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 32px;
-  max-width: 1040px;
-}
-.team-edge .label { padding-top: 6px; }
-.team-edge .prose { margin: 0; }
-
 @media (max-width: 860px) {
   .team-row { grid-template-columns: 72px 1fr; gap: 20px; padding: 24px 0; }
   .team-row .bio { grid-column: 1 / -1; padding-top: 8px; }
@@ -964,7 +945,6 @@ section.hero { padding: 0; }
   .portrait { width: 72px; height: 72px; }
   .portrait .monogram { font-size: 22px; }
   .team-row .person h4 { font-size: 28px; }
-  .team-edge { grid-template-columns: 1fr; gap: 12px; }
 }
 
 /* --------------------------------------------------------- Contact */

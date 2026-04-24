@@ -161,7 +161,7 @@ function Team() {
   const members = [
     { name: "Alex Shee", photo: "assets/team/alex-shee.jpg", role: t("team.alex.role"), bio: t("team.alex.bio") },
     { name: "Isaac Souweine", photo: "assets/team/isaac-souweine.jpg", role: t("team.isaac.role"), bio: t("team.isaac.bio") },
-    { name: "Magaly Charbonneau", photo: "assets/team/magaly-charbonneau.jpg", role: t("team.magaly.role"), bio: t("team.magaly.bio") },
+    { name: "Marc Ghobriel", photo: "assets/team/marc-ghobriel.jpg", role: t("team.marc.role"), bio: t("team.marc.bio") },
   ];
   const initials = (name) => name.split(" ").map((s) => s[0]).join("").slice(0, 2);
   return (
@@ -199,14 +199,6 @@ function Team() {
             </Reveal>
           ))}
         </div>
-        <Reveal delay={240}>
-          <div className="team-edge">
-            <div className="label">{t("team.edge.label")}</div>
-            <p className="prose">
-              {t("team.edge.body.1")}<strong>{t("team.edge.body.steve")}</strong>{t("team.edge.body.2")}<strong>{t("team.edge.body.shyam")}</strong>{t("team.edge.body.3")}
-            </p>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
