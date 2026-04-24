@@ -348,12 +348,7 @@ section.hero { padding: 0; }
   overflow: hidden;
   isolation: isolate;
   background:
-    radial-gradient(ellipse 62% 55% at 32% 52%,
-      rgba(238, 241, 244, 0.96) 0%,
-      rgba(238, 241, 244, 0.80) 35%,
-      rgba(238, 241, 244, 0.40) 60%,
-      transparent 82%),
-    url('assets/neural-bg.svg') center/cover no-repeat,
+    url('assets/neural-bg.svg') right bottom / 55% auto no-repeat,
     #EEF1F4;
 }
 .hero-scrim {
