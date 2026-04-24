@@ -76,8 +76,8 @@ const STRINGS = {
     "team.alex.bio": "Early-stage deep-tech investor and former AI executive who scaled a company to $2B.",
     "team.isaac.role": "General Partner",
     "team.isaac.bio": "Early-stage investor and community builder with experience supporting companies from first check to scale.",
-    "team.marc.role": "COO / CFO",
-    "team.marc.bio": "10 years of operational experience in tech, including CFO at FlightHub Group and CEO at Life House.",
+    "team.marc.role": "COO/CFO",
+    "team.marc.bio": "10 years of operational experience in tech, including CFO at FlightHub Group, CEO at Life House.",
 
     "contact.eyebrow": "Become a partner",
     "contact.headline": "Join us in building the future of AI",
@@ -161,8 +161,8 @@ const STRINGS = {
     "team.alex.bio": "Investisseur en technologies profondes en phase d'amorçage et ancien dirigeant en IA ayant fait croître une entreprise jusqu'à 2 G$.",
     "team.isaac.role": "Associé principal",
     "team.isaac.bio": "Investisseur en phase d'amorçage et bâtisseur de communauté, avec l'expérience d'accompagner des entreprises du premier chèque à l'échelle.",
-    "team.marc.role": "COO / CFO",
-    "team.marc.bio": "10 ans d'expérience opérationnelle en technologie, dont CFO chez FlightHub Group et CEO chez Life House.",
+    "team.marc.role": "COO/CFO",
+    "team.marc.bio": "10 ans d'expérience opérationnelle en technologie, dont CFO chez FlightHub Group, CEO chez Life House.",
 
     "contact.eyebrow": "Devenir partenaire",
     "contact.headline": "Joignez-vous à nous pour bâtir l'avenir de l'IA",
