@@ -50,9 +50,14 @@ function Hero() {
               <p className="sub">{t("hero.sub")}</p>
             </Reveal>
             <Reveal delay={240}>
-              <p className="partners">
-                {t("cred.label")} <strong>Mila</strong> + <strong>Inovia Capital</strong>
-              </p>
+              <div className="hero-partners">
+                <span className="hero-partners-label">{t("cred.label")}</span>
+                <div className="hero-partners-logos">
+                  <img src="assets/inovia-logo.png" alt="Inovia Capital" />
+                  <span className="hero-partners-sep" aria-hidden="true" />
+                  <img src="assets/mila-logo.png" alt="Mila" />
+                </div>
+              </div>
             </Reveal>
             <Reveal delay={320}>
               <div className="actions">
