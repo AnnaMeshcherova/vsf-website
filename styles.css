@@ -347,9 +347,7 @@ section.hero { padding: 0; }
   color: var(--ink);
   overflow: hidden;
   isolation: isolate;
-  background:
-    url('assets/neural-bg.svg') right bottom / 55% auto no-repeat,
-    #EEF1F4;
+  background: #EEF1F4;
 }
 .hero-scrim {
   position: absolute;
