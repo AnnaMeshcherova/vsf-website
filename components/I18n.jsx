@@ -42,6 +42,8 @@ const STRINGS = {
     "opp.stat2.where": "flows here",
     "opp.gap.label": "The gap",
     "opp.gap.k": "funding vs. talent — one of the largest imbalances in venture today",
+    "opp.source.prefix": "Source: ",
+    "opp.source.link": "The Rise of the Canadian Venture Scientist, Mila and Bain & Company",
     "opp.close": "This gap is exactly where VSF is designed to operate. We close it by embedding inception-stage capital and company-building inside the research communities where breakthroughs are born.",
 
     "adv.label": "03 — Advantage",
@@ -131,6 +133,8 @@ const STRINGS = {
     "opp.stat2.where": "y est investi",
     "opp.gap.label": "L'écart",
     "opp.gap.k": "financement vs. talent — l'un des plus grands déséquilibres du capital-risque actuel",
+    "opp.source.prefix": "Source : ",
+    "opp.source.link": "The Rise of the Canadian Venture Scientist, Mila et Bain & Company",
     "opp.close": "Cet écart est précisément là où VSF est conçu pour opérer. Nous le comblons en intégrant l'investissement d'amorçage et la construction d'entreprises au cœur des communautés de recherche où naissent les percées.",
 
     "adv.label": "03 — Avantage",

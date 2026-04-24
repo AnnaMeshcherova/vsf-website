@@ -58,6 +58,18 @@ function Opportunity() {
             </div>
           </div>
         </Reveal>
+        <Reveal delay={180}>
+          <p className="opp-source">
+            {t("opp.source.prefix")}
+            <a
+              href="https://mila.quebec/en/news/canadas-ai-moment-is-now-mila-and-bain-company-urge-canada-to-turn-research-leadership-into"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("opp.source.link")}
+            </a>
+          </p>
+        </Reveal>
         <Reveal delay={220}>
           <p className="prose opp-close">{t("opp.close")}</p>
         </Reveal>
