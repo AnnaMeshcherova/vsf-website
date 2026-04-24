@@ -22,7 +22,7 @@ const STRINGS = {
     "thesis.label": "01 — Thesis",
     "thesis.headline": "The rise of the Venture Scientist.",
     "thesis.p1.1": "The most important companies of the AI era, including ",
-    "thesis.p1.2": ", share a common origin: researchers who turned breakthroughs in science into global companies.",
+    "thesis.p1.2": ", share a common origin: researchers who turned scientific breakthroughs into global companies.",
     "thesis.p2.1": "We call them ",
     "thesis.p2.vs": "Venture Scientists",
     "thesis.p2.2": ". They emerge at the frontier of research—where new capabilities are discovered and new companies are born.",
@@ -42,7 +42,7 @@ const STRINGS = {
     "opp.stat2.where": "flows here",
     "opp.gap.label": "The gap",
     "opp.gap.k": "funding vs. talent — one of the largest imbalances in venture today",
-    "opp.close": "This gap represents one of the largest untapped venture opportunities in the world. We close that gap by backing companies at inception, and inside the research labs where they start.",
+    "opp.close": "This gap is exactly where VSF is designed to operate. We close it by embedding inception-stage capital and company-building inside the research communities where breakthroughs are born.",
 
     "adv.label": "03 — Advantage",
     "adv.headline": "Where science meets scale.",
@@ -131,7 +131,7 @@ const STRINGS = {
     "opp.stat2.where": "y est investi",
     "opp.gap.label": "L'écart",
     "opp.gap.k": "financement vs. talent — l'un des plus grands déséquilibres du capital-risque actuel",
-    "opp.close": "Cet écart représente l'une des plus grandes opportunités inexploitées en capital-risque au monde. Nous le comblons en soutenant les entreprises dès leur création, directement à l'intérieur des laboratoires de recherche où elles prennent naissance.",
+    "opp.close": "Cet écart est précisément là où VSF est conçu pour opérer. Nous le comblons en intégrant l'investissement d'amorçage et la construction d'entreprises au cœur des communautés de recherche où naissent les percées.",
 
     "adv.label": "03 — Avantage",
     "adv.headline": "Où la science rencontre l'échelle.",
