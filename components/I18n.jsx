@@ -8,13 +8,13 @@ const STRINGS = {
     "nav.advantage": "Advantage",
     "nav.team": "Team",
     "nav.contact": "Contact",
-    "nav.cta": "Get in touch",
+    "nav.cta": "Join Us",
 
     "hero.tag": "Fund I · Now raising",
     "hero.headline": "Backing Breakthroughs, Shaping Humanity",
     "hero.headline.future": "future",
     "hero.sub": "We back AI scientists at the moment of discovery, turning breakthroughs into category-defining companies.",
-    "hero.cta.primary": "Become a partner",
+    "hero.cta.primary": "Join Us",
     "hero.cta.secondary": "Read the thesis",
 
     "cred.label": "In partnership with",
@@ -97,13 +97,13 @@ const STRINGS = {
     "nav.advantage": "Avantage",
     "nav.team": "Équipe",
     "nav.contact": "Contact",
-    "nav.cta": "Nous contacter",
+    "nav.cta": "Rejoignez-nous",
 
     "hero.tag": "Fonds I · Levée en cours",
     "hero.headline": "Soutenir les percées, façonner l'humanité",
     "hero.headline.future": "l'avenir",
     "hero.sub": "Nous soutenons les scientifiques de l'IA au moment de la découverte, transformant leurs percées en entreprises qui redéfinissent des catégories entières.",
-    "hero.cta.primary": "Devenir partenaire",
+    "hero.cta.primary": "Rejoignez-nous",
     "hero.cta.secondary": "Lire la thèse",
 
     "cred.label": "En partenariat avec",

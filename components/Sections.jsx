@@ -26,11 +26,6 @@ function Thesis() {
             </p>
           </Reveal>
         </div>
-        <Reveal delay={240}>
-          <div className="thesis-path">
-            <TypewriterLine />
-          </div>
-        </Reveal>
       </div>
     </section>
   );
