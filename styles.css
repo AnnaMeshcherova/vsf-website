@@ -180,13 +180,17 @@ section.hero { padding: 0; }
 }
 .btn-ghost:hover { background: var(--ink); color: var(--ivory); border-color: var(--ink); }
 
-/* Over-hero variants (ivory on dark) */
+/* Over-hero variants (ivory on dark) — accent green CTA for focal anchor */
 .hero .btn {
-  background: var(--ivory);
+  background: var(--accent);
   color: var(--ink);
-  border-color: var(--ivory);
+  border-color: var(--accent);
 }
-.hero .btn:hover { background: #fffdf7; color: var(--ink); }
+.hero .btn:hover {
+  background: #33e58a;
+  border-color: #33e58a;
+  color: var(--ink);
+}
 .hero .btn-ghost {
   background: transparent;
   color: var(--ivory);
@@ -420,13 +424,22 @@ section.hero { padding: 0; }
 .hero .partners {
   margin-top: 28px;
   padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.22);
   max-width: 56ch;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ivory-mute);
+  position: relative;
+}
+.hero .partners::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 2px;
+  background: var(--accent);
 }
 .hero .partners strong { color: var(--ivory); font-weight: 500; }
 
