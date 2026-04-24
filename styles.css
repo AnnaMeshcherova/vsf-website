@@ -136,6 +136,14 @@ section.hero { padding: 0; }
   background: var(--ink-mute);
 }
 .section-head h2 { max-width: 16ch; }
+.section-head h2::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 20px;
+}
 
 .section-body {
   padding-left: var(--col-indent);
@@ -554,11 +562,13 @@ section.hero { padding: 0; }
 }
 .opp-stat {
   padding-top: 20px;
-  border-top: 1px solid var(--rule-strong);
+  border-top: 2px solid var(--rule-strong);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+.opp-stat-talent { border-top-color: var(--accent); }
+.opp-stat-funding { border-top-color: var(--ink-slate); }
 .opp-stat-caption {
   font-family: var(--font-body);
   font-size: 17px;
@@ -946,6 +956,17 @@ section.hero { padding: 0; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-mute);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.team-row .person .role::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 .team-row .bio {
   margin: 0;
@@ -986,6 +1007,16 @@ section.hero { padding: 0; }
   display: inline-flex;
   gap: 16px;
   justify-content: center;
+}
+#contact .btn {
+  background: var(--accent);
+  color: var(--ink);
+  border-color: var(--accent);
+}
+#contact .btn:hover {
+  background: #33e58a;
+  border-color: #33e58a;
+  color: var(--ink);
 }
 
 /* --------------------------------------------------------- Footer */
