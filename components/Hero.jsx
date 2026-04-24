@@ -38,7 +38,6 @@ function Hero() {
   const { t } = useI18n();
   return (
     <section className="hero" id="top">
-      <img className="hero-bg" src="assets/hero-bg.jpg" alt="" loading="eager" decoding="async" />
       <div className="hero-scrim" aria-hidden="true"></div>
 
       <div className="hero-body">

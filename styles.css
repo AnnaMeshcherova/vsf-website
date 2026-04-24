@@ -361,14 +361,6 @@ section.hero { padding: 0; }
   isolation: isolate;
   background: #0a0806;
 }
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: 70% 50%;
-  z-index: -2;
-}
 .hero-scrim {
   position: absolute;
   inset: 0;
@@ -1079,7 +1071,6 @@ section.hero { padding: 0; }
   .lang-toggle { font-size: 10px; }
 
   .hero-body { padding: 96px 0 56px; }
-  .hero-bg { object-position: 60% 50%; }
   .hero .sub { font-size: 16px; }
   .hero .partners { font-size: 10px; letter-spacing: 0.14em; }
   .hero .actions { margin-top: 24px; gap: 10px; }
