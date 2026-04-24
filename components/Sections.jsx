@@ -59,6 +59,9 @@ function Opportunity() {
           </div>
         </Reveal>
         <Reveal delay={180}>
+          <p className="prose opp-close">{t("opp.close")}</p>
+        </Reveal>
+        <Reveal delay={220}>
           <p className="opp-source">
             {t("opp.source.prefix")}
             <a
@@ -69,9 +72,6 @@ function Opportunity() {
               {t("opp.source.link")}
             </a>
           </p>
-        </Reveal>
-        <Reveal delay={220}>
-          <p className="prose opp-close">{t("opp.close")}</p>
         </Reveal>
       </div>
     </section>
