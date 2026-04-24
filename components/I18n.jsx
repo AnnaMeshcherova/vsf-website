@@ -11,7 +11,7 @@ const STRINGS = {
     "nav.cta": "Get in touch",
 
     "hero.tag": "Fund I · Now raising",
-    "hero.headline": "Fund the future of AI",
+    "hero.headline": "Backing Breakthroughs, Shaping Humanity",
     "hero.headline.future": "future",
     "hero.sub": "We back AI scientists at the moment of discovery, turning breakthroughs into category-defining companies.",
     "hero.cta.primary": "Become a partner",
@@ -100,7 +100,7 @@ const STRINGS = {
     "nav.cta": "Nous contacter",
 
     "hero.tag": "Fonds I · Levée en cours",
-    "hero.headline": "Financer l'avenir de l'IA",
+    "hero.headline": "Soutenir les percées, façonner l'humanité",
     "hero.headline.future": "l'avenir",
     "hero.sub": "Nous soutenons les scientifiques de l'IA au moment de la découverte, transformant leurs percées en entreprises qui redéfinissent des catégories entières.",
     "hero.cta.primary": "Devenir partenaire",
