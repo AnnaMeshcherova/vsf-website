@@ -5,17 +5,18 @@
    ========================================================================== */
 
 :root {
-  /* Color */
-  --bg: #F4F1EA;            /* warm ivory page */
-  --bg-alt: #FFFFFF;        /* alt section */
-  --ink: #17150F;           /* primary text, display */
-  --ink-soft: #2B2924;      /* body prose */
-  --ink-mute: #6B6861;      /* meta, labels */
-  --rule: #E4DFD2;          /* hairlines */
-  --rule-strong: #B8B1A0;   /* emphasis rules */
-  --accent: #1C3D5C;        /* Prussian ink-blue */
-  --ivory: #F4F1EA;
-  --ivory-mute: rgba(244, 241, 234, 0.78);
+  /* Color — palette aligned with the VSF pitch deck (April 2026) */
+  --bg: #FFFFFF;            /* pure white page (matches deck) */
+  --bg-alt: #F5F7F8;        /* subtle cool gray for alt sections */
+  --ink: #0D0E10;           /* cool near-black, primary text */
+  --ink-soft: #2A2D32;      /* body prose */
+  --ink-mute: #6B7280;      /* meta, labels */
+  --rule: #E5E7EB;          /* hairlines */
+  --rule-strong: #B0B5BD;   /* emphasis rules */
+  --accent: #1FD97A;        /* electric green (deck brand color) */
+  --ink-slate: #1B2834;     /* deep slate-navy (deck secondary) */
+  --ivory: #FFFFFF;         /* hero text over dark scrim */
+  --ivory-mute: rgba(255, 255, 255, 0.78);
 
   /* Type */
   --font-display: "Source Serif 4", "Source Serif Pro", "Times New Roman", Georgia, serif;
@@ -168,7 +169,7 @@ section.hero { padding: 0; }
   cursor: pointer;
   transition: transform 180ms var(--ease-out), background 180ms var(--ease-out), color 180ms var(--ease-out);
 }
-.btn:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
+.btn:hover { background: var(--accent); border-color: var(--accent); color: var(--ink); transform: translateY(-1px); }
 .btn .arrow { display: inline-block; transition: transform 200ms var(--ease-out); }
 .btn:hover .arrow { transform: translateX(4px); }
 
@@ -189,10 +190,10 @@ section.hero { padding: 0; }
 .hero .btn-ghost {
   background: transparent;
   color: var(--ivory);
-  border-color: rgba(244, 241, 234, 0.45);
+  border-color: rgba(255, 255, 255, 0.45);
 }
 .hero .btn-ghost:hover {
-  background: rgba(244, 241, 234, 0.12);
+  background: rgba(255, 255, 255, 0.12);
   border-color: var(--ivory);
   color: var(--ivory);
 }
@@ -211,7 +212,7 @@ section.hero { padding: 0; }
   border-bottom: 1px solid transparent;
 }
 .nav.scrolled {
-  background: rgba(244, 241, 234, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   color: var(--ink);
@@ -266,10 +267,10 @@ section.hero { padding: 0; }
 .nav:not(.scrolled) .nav-right .btn {
   background: transparent;
   color: var(--ivory);
-  border-color: rgba(244, 241, 234, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 .nav:not(.scrolled) .nav-right .btn:hover {
-  background: rgba(244, 241, 234, 0.12);
+  background: rgba(255, 255, 255, 0.12);
   border-color: var(--ivory);
 }
 .nav.scrolled .nav-right .btn {
@@ -294,7 +295,7 @@ section.hero { padding: 0; }
   font-size: 11px;
   letter-spacing: 0.14em;
   color: inherit;
-  border: 1px solid rgba(244, 241, 234, 0.32);
+  border: 1px solid rgba(255, 255, 255, 0.32);
   border-radius: var(--radius-btn);
   background: transparent;
   transition: border-color 220ms var(--ease-out);
@@ -328,7 +329,7 @@ section.hero { padding: 0; }
   top: 2px; bottom: 2px;
   width: calc(50% - 4px);
   left: 2px;
-  background: rgba(244, 241, 234, 0.14);
+  background: rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-btn);
   z-index: 1;
   transition: transform 320ms var(--ease-out), background 220ms var(--ease-out);
@@ -419,7 +420,7 @@ section.hero { padding: 0; }
 .hero .partners {
   margin-top: 28px;
   padding-top: 16px;
-  border-top: 1px solid rgba(244, 241, 234, 0.22);
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
   max-width: 56ch;
   font-family: var(--font-mono);
   font-size: 11px;
@@ -494,7 +495,9 @@ section.hero { padding: 0; }
   text-overflow: ellipsis;
 }
 .typewriter-line .static { color: var(--ink-soft); font-weight: 400; }
-.typewriter-line .dyn { color: var(--accent); font-weight: 600; }
+/* Dynamic typewriter stage: bold ink (not green) — electric green on white
+   doesn't meet WCAG contrast for text. Weight + accent border carry emphasis. */
+.typewriter-line .dyn { color: var(--ink); font-weight: 600; }
 .typewriter-line .caret {
   display: inline-block;
   width: 2px;
@@ -572,7 +575,9 @@ section.hero { padding: 0; }
   letter-spacing: -0.02em;
   line-height: 1;
 }
-.opp-stat-funding .opp-stat-v { color: var(--accent); }
+/* "The gap" stat: deep slate emphasis (not green — green connotes growth,
+   slate reads as "the serious problem"). Matches deck's data-viz logic. */
+.opp-stat-funding .opp-stat-v { color: var(--ink-slate); }
 .opp-bar {
   margin-top: 4px;
   position: relative;
@@ -687,10 +692,10 @@ section.hero { padding: 0; }
   background: var(--bg-alt);
   border-top: 3px solid var(--accent);
 }
-/* Scale side: deeper ivory + ink stripe top */
+/* Scale side: slate stripe (deck's secondary emphasis color) */
 .adv-scale {
   background: var(--bg-alt);
-  border-top: 3px solid var(--ink);
+  border-top: 3px solid var(--ink-slate);
 }
 /* Logo container: fixed height so Mila and Inovia logos sit in identical boxes */
 .adv-logo-box {
@@ -816,7 +821,7 @@ section.hero { padding: 0; }
 .portrait {
   width: 88px;
   height: 88px;
-  background: var(--ink);
+  background: var(--ink-slate);
   border-radius: 50%;
   position: relative;
   overflow: hidden;
@@ -828,7 +833,7 @@ section.hero { padding: 0; }
   font-family: var(--font-display);
   font-size: 26px;
   font-weight: 400;
-  color: rgba(244, 241, 234, 0.38);
+  color: rgba(255, 255, 255, 0.42);
   letter-spacing: 0.02em;
   font-variation-settings: "opsz" 36;
   z-index: 0;

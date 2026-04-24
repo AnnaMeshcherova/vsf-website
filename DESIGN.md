@@ -44,20 +44,26 @@
 
 ## Color
 
-**Approach:** restrained. One accent, used rarely and with intent.
+**Approach:** aligned with the VSF pitch deck (April 2026). Two meaningful colors — **electric green** and **deep slate-navy** — used sparingly on a neutral white + cool-gray base.
 
 | Token | Hex | Use |
 |-------|-----|-----|
-| `--bg` | `#F4F1EA` | Page background (warm ivory) |
-| `--bg-alt` | `#FFFFFF` | Alt section background (Opportunity, Team) |
-| `--ink` | `#17150F` | Primary text, display type |
-| `--ink-soft` | `#2B2924` | Body prose |
-| `--ink-mute` | `#6B6861` | Meta, captions, labels |
-| `--rule` | `#E4DFD2` | Hairlines, section separators |
-| `--rule-strong` | `#B8B1A0` | Emphasis rule |
-| `--accent` | `#1C3D5C` | Prussian ink-blue. Link hover underline, one-stat emphasis |
-| `--ivory` | `#F4F1EA` | Text over hero (same as `--bg`) |
-| `--ivory-mute` | `rgba(244,241,234,0.78)` | Sub text over hero |
+| `--bg` | `#FFFFFF` | Page background (pure white, matches deck) |
+| `--bg-alt` | `#F5F7F8` | Subtle cool gray for alt sections (Opportunity, Team) |
+| `--ink` | `#0D0E10` | Primary text, display type (cool near-black) |
+| `--ink-soft` | `#2A2D32` | Body prose |
+| `--ink-mute` | `#6B7280` | Meta, captions, labels |
+| `--rule` | `#E5E7EB` | Hairlines, section separators |
+| `--rule-strong` | `#B0B5BD` | Emphasis rules |
+| `--accent` | `#1FD97A` | **Electric green** (deck brand color). Typewriter accent stripe, Mila card top stripe, button hover bg, `::selection`. Used for backgrounds/borders/stripes, NOT text (contrast on white is ~1.75:1, fails WCAG). |
+| `--ink-slate` | `#1B2834` | **Deep slate-navy** (deck secondary). "~2%" gap stat, Inovia card top stripe, team portrait monograms. Semantic: "serious" / "the problem being solved." |
+| `--ivory` | `#FFFFFF` | Text over dark hero scrim |
+| `--ivory-mute` | `rgba(255,255,255,0.78)` | Sub text over hero |
+
+**Why these choices:**
+- The deck uses `#1FD97A`-ish electric green liberally for emphasis on white pages. We mirror the palette exactly — same brand voice across deck and web.
+- We do **not** use green for text because the contrast ratio on white (~1.75:1) fails WCAG. Green shows up as stripes, borders, and the typewriter accent; text emphasis is done with ink or slate instead.
+- Slate is the "data/serious" color — used where the deck uses its dark navy (pie chart fills, gap visualizations).
 
 **Dark mode:** out of scope for v1.
 
@@ -116,3 +122,4 @@ Section order unchanged: Hero → Thesis → Opportunity → Advantage → Team 
 | 2026-04-23 | Pill buttons + softer cards | User feedback: "want all CTA and buttons more rounded, softer." Switched button radius from 2px to 999px (pill), cards from 0 to 6px, team portraits from square to circular. Institutional-modern register (think banks, fintech, not brutalist). |
 | 2026-04-23 | Compact density | User feedback: "each section doesn't fit within window view." Cut section-y from 140px → 72px, tightened all inter-block spacing, reduced opportunity stat size, team rows 32px → 20px padding. Most sections now fit in a 900px laptop viewport. |
 | 2026-04-23 | Dropped JetBrains Mono entirely | User: "replace all JetBrains Mono with IBM Plex Sans — I don't want to see it anywhere." Mono read too "tech/code" for institutional-serious register. Now exactly 2 fonts across the entire site: Source Serif 4 (display) + IBM Plex Sans (body, labels, eyebrows, stats). |
+| 2026-04-24 | Full palette swap to match VSF pitch deck | User: "apply the same colors to the website." Replaced warm ivory + Prussian blue with white + electric green + slate-navy. Accent green (#1FD97A) = deck brand color. Slate (#1B2834) = deck secondary. Green used for stripes/borders/hover (not text, due to contrast). Site now feels "modern tech fund" instead of "editorial research fund" — matches deck voice. |
