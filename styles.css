@@ -735,22 +735,17 @@ section.hero { padding: 0; }
   align-items: center;
 }
 .venn-label {
-  width: 36%;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   align-items: flex-start;
+  max-width: 100%;
 }
 .venn-scale .venn-label { align-items: flex-end; text-align: right; }
 .venn-label img {
-  height: 72px;
+  height: 56px;
   width: auto;
-  max-width: 240px;
-  object-fit: contain;
   display: block;
-  /* Knock out the baked-in white background on the Inovia PNG (Mila PNG is already
-     transparent, multiply is a no-op on true-transparent pixels). */
-  mix-blend-mode: multiply;
 }
 .venn-eyebrow {
   font-family: var(--font-mono);
