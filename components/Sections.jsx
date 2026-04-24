@@ -78,34 +78,6 @@ function Opportunity() {
   );
 }
 
-function AdvCard({ tone, logo, logoAlt, heading, body, stats }) {
-  return (
-    <div className={`adv-card adv-${tone}`}>
-      <div className="adv-card-inner">
-        <div className="adv-logo-box">
-          {logo && (
-            <img
-              className="adv-logo"
-              src={logo}
-              alt={logoAlt || ""}
-              onError={(e) => { e.currentTarget.style.display = "none"; }}
-            />
-          )}
-        </div>
-        <h4 className="adv-heading">{heading}</h4>
-        <p className="adv-body">{body}</p>
-        <ul className="adv-list">
-          {stats.map((s, i) => (
-            <li key={i}>
-              <strong>{s.v}</strong> {s.k}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-}
-
 function Advantage() {
   const { t } = useI18n();
   return (
@@ -122,37 +94,61 @@ function Advantage() {
           </Reveal>
         </div>
         <Reveal delay={140}>
-          <div className="adv-grid">
-            <AdvCard
-              tone="science"
-              logo="assets/mila-logo.png"
-              logoAlt="Mila"
-              heading={t("adv.mila.h")}
-              body={t("adv.mila.p")}
-              stats={[
-                { v: t("adv.mila.s1v"), k: t("adv.mila.s1") },
-                { v: t("adv.mila.s2v"), k: t("adv.mila.s2") },
-                { v: t("adv.mila.s3v"), k: t("adv.mila.s3") },
-              ]}
-            />
-            <div className="adv-bridge" aria-hidden>
-              <span className="adv-bridge-dot" />
+          <div className="adv-venn-wrap">
+            <div
+              className="adv-venn"
+              role="img"
+              aria-label="Mila and Inovia Capital meet at The Venture Scientist Fund"
+            >
+              <div className="venn-circle venn-science">
+                <div className="venn-label">
+                  <img
+                    src="assets/mila-logo.png"
+                    alt="Mila"
+                    onError={(e) => { e.currentTarget.style.display = "none"; }}
+                  />
+                  <div className="venn-eyebrow">{t("adv.mila.eyebrow")}</div>
+                </div>
+              </div>
+              <div className="venn-circle venn-scale">
+                <div className="venn-label">
+                  <img
+                    src="assets/inovia-logo.png"
+                    alt="Inovia Capital"
+                    onError={(e) => { e.currentTarget.style.display = "none"; }}
+                  />
+                  <div className="venn-eyebrow">{t("adv.inovia.eyebrow")}</div>
+                </div>
+              </div>
+              <div className="venn-center">
+                <img src="assets/VSF_Logo_Black_RGB.svg" alt="The Venture Scientist Fund" />
+              </div>
             </div>
-            <AdvCard
-              tone="scale"
-              logo="assets/inovia-logo.png"
-              logoAlt="Inovia Capital"
-              heading={t("adv.inovia.h")}
-              body={t("adv.inovia.p")}
-              stats={[
-                { v: t("adv.inovia.s1v"), k: t("adv.inovia.s1") },
-                { v: t("adv.inovia.s2v"), k: t("adv.inovia.s2") },
-                { v: t("adv.inovia.s3v"), k: t("adv.inovia.s3") },
-              ]}
-            />
           </div>
         </Reveal>
-        <Reveal delay={220}>
+        <Reveal delay={200}>
+          <div className="adv-content">
+            <div className="adv-col">
+              <h4 className="adv-heading">{t("adv.mila.h")}</h4>
+              <p className="adv-body">{t("adv.mila.p")}</p>
+              <ul className="adv-list">
+                <li><strong>{t("adv.mila.s1v")}</strong> {t("adv.mila.s1")}</li>
+                <li><strong>{t("adv.mila.s2v")}</strong> {t("adv.mila.s2")}</li>
+                <li><strong>{t("adv.mila.s3v")}</strong> {t("adv.mila.s3")}</li>
+              </ul>
+            </div>
+            <div className="adv-col">
+              <h4 className="adv-heading">{t("adv.inovia.h")}</h4>
+              <p className="adv-body">{t("adv.inovia.p")}</p>
+              <ul className="adv-list">
+                <li><strong>{t("adv.inovia.s1v")}</strong> {t("adv.inovia.s1")}</li>
+                <li><strong>{t("adv.inovia.s2v")}</strong> {t("adv.inovia.s2")}</li>
+                <li><strong>{t("adv.inovia.s3v")}</strong> {t("adv.inovia.s3")}</li>
+              </ul>
+            </div>
+          </div>
+        </Reveal>
+        <Reveal delay={280}>
           <p className="prose adv-outro">{t("adv.outro")}</p>
         </Reveal>
       </div>
