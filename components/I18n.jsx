@@ -73,9 +73,9 @@ const STRINGS = {
     "team.headline": "Built by investors and operators inside AI.",
     "team.intro": "A team embedded in both the research and venture ecosystems, working at the intersection of science and company building.",
     "team.alex.role": "General Partner",
-    "team.alex.bio": "Early-stage deep-tech investor and former AI executive who scaled a company to $2B.",
+    "team.alex.bio": "Early-stage deep-tech investor, including Xanadu ($3.1B IPO), and former AI executive who raised $500M and scaled a company to $2B.",
     "team.isaac.role": "General Partner",
-    "team.isaac.bio": "Early-stage investor and community builder with experience supporting companies from first check to scale.",
+    "team.isaac.bio": "10-year track record as a successful early-stage investor, including AI exits like Valence Labs to Recursion, and community builder with experience supporting companies from first check to scale.",
     "team.marc.role": "COO/CFO",
     "team.marc.bio": "10 years of operational experience in tech, including CFO at FlightHub Group, CEO at Life House.",
 
@@ -158,9 +158,9 @@ const STRINGS = {
     "team.headline": "Bâti par des investisseurs et opérateurs au cœur de l'IA.",
     "team.intro": "Une équipe ancrée à la fois dans les écosystèmes de recherche et de capital-risque, travaillant à l'intersection de la science et de la construction d'entreprises.",
     "team.alex.role": "Associé principal",
-    "team.alex.bio": "Investisseur en technologies profondes en phase d'amorçage et ancien dirigeant en IA ayant fait croître une entreprise jusqu'à 2 G$.",
+    "team.alex.bio": "Investisseur en technologies profondes en phase d'amorçage, notamment Xanadu (IPO de 3,1 G$), et ancien dirigeant en IA ayant levé 500 M$ et fait croître une entreprise jusqu'à 2 G$.",
     "team.isaac.role": "Associé principal",
-    "team.isaac.bio": "Investisseur en phase d'amorçage et bâtisseur de communauté, avec l'expérience d'accompagner des entreprises du premier chèque à l'échelle.",
+    "team.isaac.bio": "10 ans de parcours comme investisseur en amorçage, notamment des sorties en IA telles que Valence Labs vers Recursion, et bâtisseur de communauté avec l'expérience d'accompagner des entreprises du premier chèque à l'échelle.",
     "team.marc.role": "COO/CFO",
     "team.marc.bio": "10 ans d'expérience opérationnelle en technologie, dont CFO chez FlightHub Group, CEO chez Life House.",
 
