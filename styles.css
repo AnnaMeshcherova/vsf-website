@@ -354,13 +354,16 @@ section.hero { padding: 0; }
   position: absolute;
   right: 0;
   bottom: 0;
-  width: clamp(280px, 38vw, 620px);
-  height: min(82%, 720px);
+  width: clamp(0px, 32vw, 540px);
+  height: min(78%, 680px);
   background: url('assets/hero-corner.jpg') center/cover no-repeat;
-  -webkit-mask-image: linear-gradient(to left, #000 55%, transparent 100%);
-  mask-image: linear-gradient(to left, #000 55%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top left, #000 25%, transparent 92%);
+  mask-image: linear-gradient(to top left, #000 25%, transparent 92%);
   z-index: 0;
   pointer-events: none;
+}
+@media (max-width: 1100px) {
+  .hero::after { display: none; }
 }
 .hero-scrim {
   position: absolute;
