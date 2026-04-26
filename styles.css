@@ -347,9 +347,20 @@ section.hero { padding: 0; }
   color: var(--ink);
   overflow: hidden;
   isolation: isolate;
-  background:
-    url('assets/hero-corner.jpg') right bottom / 55% auto no-repeat,
-    #EEF1F4;
+  background: #EEF1F4;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: clamp(280px, 38vw, 620px);
+  height: min(82%, 720px);
+  background: url('assets/hero-corner.jpg') center/cover no-repeat;
+  -webkit-mask-image: linear-gradient(to left, #000 55%, transparent 100%);
+  mask-image: linear-gradient(to left, #000 55%, transparent 100%);
+  z-index: 0;
+  pointer-events: none;
 }
 .hero-scrim {
   position: absolute;
