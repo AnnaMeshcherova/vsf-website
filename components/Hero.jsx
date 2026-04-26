@@ -53,9 +53,9 @@ function Hero() {
               <div className="hero-partners">
                 <span className="hero-partners-label">{t("cred.label")}</span>
                 <div className="hero-partners-logos">
-                  <img src="assets/inovia-logo.png" alt="Inovia Capital" />
+                  <img className="logo-mila" src="assets/mila-logo.png" alt="Mila" />
                   <span className="hero-partners-sep" aria-hidden="true" />
-                  <img src="assets/mila-logo.png" alt="Mila" />
+                  <img src="assets/inovia-logo.png" alt="Inovia Capital" />
                 </div>
               </div>
             </Reveal>

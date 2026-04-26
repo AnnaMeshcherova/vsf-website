@@ -439,6 +439,9 @@ section.hero { padding: 0; }
   width: auto;
   display: block;
 }
+.hero-partners-logos img.logo-mila {
+  height: 44px;
+}
 .hero-partners-sep {
   width: 1px;
   height: 24px;
