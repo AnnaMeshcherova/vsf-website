@@ -348,7 +348,7 @@ section.hero { padding: 0; }
   overflow: hidden;
   isolation: isolate;
   background:
-    url('assets/neural-bg.svg') right bottom / 55% auto no-repeat,
+    url('assets/hero-corner.jpg') right bottom / 55% auto no-repeat,
     #EEF1F4;
 }
 .hero-scrim {
